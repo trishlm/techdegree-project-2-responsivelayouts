@@ -1,0 +1,197 @@
+/****BASE ELEMENT STYLES****/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #B0C4DE;
+  }
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  font-weight: bold;
+}
+/****BASE LAYOUT STYLES****/
+
+
+
+.name a {
+  display: block;
+  color: #3f0251;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+
+.main-nav a:hover {
+  color: #9400D3;
+}
+
+a:hover {
+  color: #9400D3;
+}
+
+
+.navilist a {
+  display: block;
+  padding: 8px 8px;
+  background: white;
+  border: 3px solid #B0C4DE;
+  color: black;
+  font-weight: bold;
+}
+
+.main-header {
+  text-align: center;
+  padding:  10px 12px 20px;
+}
+
+.profilepic {
+  margin:35px 10px 35px;
+}
+
+
+
+.portfoliopic {
+  display: block;
+  margin: auto;
+
+}
+
+.bottom {
+  border-top: 2px solid white;
+  padding: 20px;
+}
+
+.backtotop {
+  display: inline-block;
+  float: right;
+  text-transform: uppercase;
+}
+
+.navilistfooter {
+  display: none;
+}
+/****LAYOUT CONTAINERS****/
+
+.pagedescwrapper {
+  background-color: white;
+  padding:  10px 12px 20px;
+  text-align: center;
+}
+
+.contactwrapper {
+  text-align: center;
+  padding:  10px 12px 20px;
+}
+
+/****MEDIA QUERIES****/
+
+@media (min-width:768px){
+
+
+
+.col {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 3em;
+  }
+
+.main-nav li,
+.navilist a {
+  display: inline;
+  background: none;
+}
+
+.cont-intro {
+  display: inline-block;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.profilepic {
+  float: right;
+  margin-top: 1.2em;
+}
+
+.clearfix::after {
+  content:" ";
+  display: table;
+  clear: both;
+}
+
+.backtotop {
+  display: none;
+}
+
+.navilistfooter {
+  display: inline;
+  float: right;
+}
+
+.navfooter li,
+.navilistfooter a {
+  display: inline-block;
+  padding-left: 3px;
+}
+}
+
+@media (min-width:1024px){
+  .colA {
+    width: 33.3%
+  }
+
+  .colB {
+    width: 33.3%
+  }
+
+  .name a {
+    display: inline;
+    float: left;
+  }
+.navilist {
+  display: inline;
+  float: right;
+}
+
+.main-nav li,
+.navilist a {
+  display: inline-block;
+}
+
+.cont-intro {
+  width: 100%;
+}
+}
